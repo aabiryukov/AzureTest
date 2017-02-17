@@ -74,10 +74,9 @@
   },
   "variables": {
     "storageAccountName": "[concat(uniquestring(resourceGroup().id, deployment().name))]",
-    "imagePublisher": "MicrosoftVisualStudio",
-    "imageOffer": "windows",
-    "windowsOSVersion": "10-Enterprise-N",
-    "apiVersion": "2015-06-15",
+    "imagePublisher": "MicrosoftWindowsServer",
+    "imageOffer": "WindowsServer",
+    "windowsOSVersion": "2016-Datacenter",
     "nicName": "[concat(parameters('dnsLabelPrefix'),'Nic')]",
     "publicIPName": "[concat(parameters('dnsLabelPrefix'),'Pip')]",
     "vnetID": "[resourceId(resourceGroup().name, 'Microsoft.Network/virtualNetworks', parameters('existingVNETName'))]",
